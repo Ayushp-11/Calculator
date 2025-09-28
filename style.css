@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+         font-family: "Lato", sans-serif;
+}
+body{
+    width: 100vh;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+   background: linear-gradient(45deg,#040606 ,#534355);
+}
+
+.calculator{
+    border: 0.05rem solid #4c7272;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 18px;
+    background:transparent;
+    box-shadow: 2px 5px 40px rgba(115, 120 , 130,2);
+}
+
+ input{
+    width: 400px;
+    padding: 30px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 2px 5px 40px rgba(84,85, 84,0.1);
+    font-size: 30px;
+    text-align: right;
+    cursor: pointer;
+    color:white
+ }
+ input::placeholder{
+    color:#7dacc4;
+ }
+
+ button{
+   border:none;
+   width: 95px;
+   height:50px;
+   margin: 5px;
+   border-radius: 20%;
+   background: transparent;  
+   color: rgb(163, 163, 163);
+   font-size: 20px;
+   box-shadow: 1px 5px 5px rgba(255, 255, 255, 0.2);
+   cursor: pointer;
+ }
+ 
+  .equalbutton {
+    background-color: rgba(113, 113, 202, 0.9);
+    color: white;
+    font-weight: bold;
+ }
+
+ .operation{
+   background-color: azure;
+   color: #040606;
+ }
+ 
+ .operator {
+   color: #7bd2d3;
+ }
+ 
+.history {
+  color: white;
+  margin: 10px 0;
+  max-height: 80px;      
+  overflow-y: auto;
+  font-size: 14px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.history h3 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #d5d5d5;
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;         
+  flex-direction: column;
+  gap: 4px;
+}
+
+.history li {
+  display: inline-block;  
+  background: rgba(255,255,255,0.1);
+  padding: 3px 8px;
+  border-radius: 6px;
+  white-space: nowrap;   
+  width: fit-content;     
+}
+
